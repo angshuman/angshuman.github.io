@@ -4,10 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Angshuman Sarkar — Principal Software Engineer</title>
-  <meta name="description" content="Principal Software Engineer with 20+ years building distributed systems, cloud platforms, and AI-driven software at Microsoft and beyond." />
-  <meta property="og:title" content="Angshuman Sarkar — Principal Software Engineer" />
-  <meta property="og:description" content="20+ years architecting high-performance distributed systems, cloud platforms, and AI-driven software. Microsoft · Azure · IoT · NLP." />
-  <meta property="og:type" content="website" />
+  <meta name="description" content="Principal Software Engineer. 20+ years building distributed systems, cloud platforms, and AI-native software." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
@@ -15,227 +12,149 @@
 </head>
 <body>
 
-  <!-- ═══ NAVBAR ═══ -->
+  <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">AS</a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Timeline</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact" class="btn-nav">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ═══ HERO ═══ -->
+  <!-- HERO -->
   <section id="hero">
-    <div class="hero-bg">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-      <div class="grid-overlay"></div>
-    </div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Based in Seattle, WA · Open to Advisory &amp; Consulting
-      </div>
-      <h1>Angshuman<br /><span class="gradient-text">Sarkar</span></h1>
-      <p class="hero-title">Principal Software Engineer</p>
-      <p class="hero-sub">
-        20+ years architecting high-performance distributed systems, cloud platforms,
-        and AI-driven software at enterprise scale. Currently at Microsoft building
-        the future of Azure IoT.
-      </p>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">20+</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">2</span>
-          <span class="stat-label">U.S. Patents</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">10M+</span>
-          <span class="stat-label">Devices Managed</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">10+</span>
-          <span class="stat-label">Engineers Led</span>
-        </div>
-      </div>
-      <div class="hero-actions">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#experience" class="btn-secondary">My Journey</a>
-        <a href="https://github.com/angshuman" target="_blank" rel="noopener" class="btn-ghost">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-          GitHub
-        </a>
-      </div>
-    </div>
-    <div class="scroll-indicator"><div class="scroll-line"></div></div>
-  </section>
-
-  <!-- ═══ ABOUT ═══ -->
-  <section id="about">
     <div class="container">
-      <div class="section-label">About</div>
-      <div class="about-grid">
-        <div class="about-text">
-          <h2>Building systems that <span class="gradient-text">scale</span></h2>
-          <p>I'm a hands-on engineering leader currently at Microsoft, where I've spent 13+ years building foundational cloud infrastructure — from Azure Digital Twins' query engine to IoT Central's multi-tenant device management platform handling <strong>10 million devices per application</strong>.</p>
-          <p>I thrive at the intersection of deep systems engineering and applied AI — architecting graph databases from scratch, tuning query optimizers, or wiring up NLP pipelines for enterprise workflows.</p>
-          <p>Outside of Microsoft, I build open-source tools and AI-powered products. I hold two U.S. patents in graph databases and conversational AI.</p>
-          <div class="about-links">
-            <a href="mailto:sendtoansu@gmail.com" class="link-pill">✉ sendtoansu@gmail.com</a>
-            <a href="tel:+14256236992" class="link-pill">📞 +1 425-623-6992</a>
-            <a href="https://linkedin.com/in/angshumansarkar" target="_blank" rel="noopener" class="link-pill">LinkedIn ↗</a>
-            <a href="https://github.com/angshuman" target="_blank" rel="noopener" class="link-pill">GitHub ↗</a>
-          </div>
-        </div>
-        <div class="about-highlights">
-          <div class="highlight-card">
-            <div class="highlight-icon">🏗️</div>
-            <h4>Systems Architect</h4>
-            <p>Designed query engines, graph stores, and multi-tenant platforms for Azure-scale workloads.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">🤖</div>
-            <h4>AI / NLP Practitioner</h4>
-            <p>Built LLM-based rules engines, topic extraction pipelines, and conversational AI frameworks.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">🔬</div>
-            <h4>Open-Source Builder</h4>
-            <p>Authored HexaDB, a graph database on RocksDB, and multiple cloud &amp; data processing tools.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">📜</div>
-            <h4>Patented Inventor</h4>
-            <p>Two U.S. patents in graph database disambiguation and conversational AI architecture.</p>
-          </div>
-        </div>
+      <div class="hero-eyebrow">Seattle, WA &nbsp;·&nbsp; Microsoft &nbsp;·&nbsp; 2 U.S. Patents</div>
+      <h1>Angshuman<br>Sarkar</h1>
+      <p class="hero-sub">Principal Software Engineer. 20+ years building distributed systems, cloud platforms, and AI-native software at enterprise scale.</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">20+</span><span class="stat-l">years</span></div>
+        <div class="stat"><span class="stat-n">13+</span><span class="stat-l">at Microsoft</span></div>
+        <div class="stat"><span class="stat-n">10M+</span><span class="stat-l">devices managed</span></div>
+        <div class="stat"><span class="stat-n">2</span><span class="stat-l">U.S. patents</span></div>
+      </div>
+      <div class="hero-cta">
+        <a href="#work" class="btn-primary">Explore Work</a>
+        <a href="https://github.com/angshuman" target="_blank" rel="noopener" class="btn-outline">GitHub ↗</a>
+        <a href="https://linkedin.com/in/angshumansarkar" target="_blank" rel="noopener" class="btn-ghost">LinkedIn ↗</a>
       </div>
     </div>
   </section>
 
-  <!-- ═══ EXPERIENCE ═══ -->
+  <!-- WORK — Business Impact -->
+  <section id="work">
+    <div class="container">
+      <div class="section-kicker">Experience &amp; Impact</div>
+      <h2>Where the work lives</h2>
+      <p class="section-sub">Two engineering tracks spanning 20 years: cloud infrastructure at planetary scale, and OS/device-level software in constrained hardware.</p>
+
+      <div class="impact-grid">
+
+        <!-- Cloud Track -->
+        <div class="impact-track reveal">
+          <div class="track-header">
+            <span class="track-badge cloud">Cloud &amp; Platform</span>
+            <div class="track-company">Microsoft &nbsp;·&nbsp; Oct 2012 – Present</div>
+          </div>
+          <p class="track-summary">Led foundational infrastructure across Azure Digital Twins, IoT Central, and Bot Framework — shipped to enterprise customers at global scale. Held the role of lead architect on two Azure v0 products, advising senior leadership and guiding cross-functional teams of 10+ engineers.</p>
+          <ul class="impact-list">
+            <li>Designed and shipped Azure Digital Twins' <strong>custom graph engine</strong>: RocksDB-backed store with OpenCypher→Gremlin translation — eliminated all external database dependencies, delivering a direct platform COGS reduction at cloud scale.</li>
+            <li>Architected IoT Central's <strong>multi-tenant device management layer</strong>: 10 million devices per application, 1,000 QPS per region — the foundation for Microsoft's enterprise IoT product expansion.</li>
+            <li>Led <strong>graph database evaluation</strong> across JanusGraph, Neo4J, Liquid, and Faster; delivered COGS analysis and architectural recommendations that shaped Azure Digital Twins' next-generation storage strategy, presented to senior leadership.</li>
+            <li>Shipped <strong>Bot Framework NLU integration</strong> in collaboration with ML specialists — part of Microsoft's production conversational AI developer platform used by thousands of developers.</li>
+            <li>Contributed to <strong>Microsoft Sets (MSR)</strong>: redesigned triple-store with LMDB for scalability beyond memory limits, with high availability and replication.</li>
+          </ul>
+        </div>
+
+        <!-- Embedded Track -->
+        <div class="impact-track reveal">
+          <div class="track-header">
+            <span class="track-badge embedded">Embedded &amp; Device</span>
+            <div class="track-company">Qualcomm &nbsp;·&nbsp; 2008–2012 &nbsp;&nbsp;Rebaca &nbsp;·&nbsp; 2006–2008</div>
+          </div>
+          <p class="track-summary">Built OS-level and driver-level software deployed across millions of mobile and embedded devices — from DSP firmware on Qualcomm chipsets to real-time video transcoders on surveillance hardware.</p>
+          <ul class="impact-list">
+            <li>Designed <strong>shared-memory IPC driver and SDK</strong> for Qualcomm mobile chipsets: high-throughput modem↔application-processor communication for voice and data services, deployed across Qualcomm's mobile device lineup.</li>
+            <li>Advanced <strong>QRX RTOS</strong> for Qualcomm DSP5: optimized paging algorithms and virtual memory management for audio/video workloads under tight memory and power constraints on shipping handheld hardware.</li>
+            <li>Shipped <strong>RTP video transcoder</strong> on embedded Linux for surveillance systems: on-the-fly stream compression enabling reliable live and recorded video over bandwidth-constrained networks.</li>
+          </ul>
+
+          <div class="patents-block">
+            <div class="patents-label">U.S. Patents</div>
+            <div class="patent-item">
+              <span class="patent-num">US10437810B2</span>
+              <span>Disambiguation of Collection Access in a Graph Database</span>
+            </div>
+            <div class="patent-item">
+              <span class="patent-num">US10565981B2</span>
+              <span>Computer-Assisted Conversation Using Addressable Conversation Segments</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
   <section id="experience">
     <div class="container">
-      <div class="section-label">Experience</div>
-      <h2>Career <span class="gradient-text">Timeline</span></h2>
+      <div class="section-kicker">Career Timeline</div>
+      <h2>The journey</h2>
+
       <div class="timeline">
 
-        <!-- Microsoft -->
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="marker-ring"></div>
-            <div class="marker-dot"></div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Principal Software Engineer</h3>
-                <div class="timeline-company">
-                  <span class="company-badge microsoft">Microsoft</span>
-                  <span class="timeline-loc">Redmond, WA</span>
-                </div>
-              </div>
-              <div class="timeline-period">
-                Oct 2012 — Present
-                <span class="duration">13+ yrs</span>
-              </div>
+        <div class="tl-item reveal">
+          <div class="tl-left"><span class="tl-date">2012 – Present</span></div>
+          <div class="tl-connector"><div class="tl-dot"></div><div class="tl-vline"></div></div>
+          <div class="tl-card">
+            <div class="tl-role">Principal Software Engineer</div>
+            <div class="tl-org"><span class="org-badge ms">Microsoft</span> Redmond, WA</div>
+            <div class="tl-chips">
+              <span>Azure Digital Twins</span><span>IoT Central</span>
+              <span>Bot Framework</span><span>Graph Databases</span><span>RocksDB</span>
             </div>
-            <div class="timeline-tags">
-              <span class="tag">Azure Digital Twins</span>
-              <span class="tag">IoT Central</span>
-              <span class="tag">Bot Framework</span>
-              <span class="tag">Graph Databases</span>
-              <span class="tag">RocksDB</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Architected Azure Digital Twins' query processing system — translated <strong>OpenCypher to Gremlin</strong>, built a <strong>RocksDB-based graph store</strong>, and eliminated external database dependencies, significantly reducing COGS while enabling high-performance querying for industrial IoT data.</li>
-              <li>Led 10+ engineers to deliver a multi-tenant device management platform in <strong>Azure IoT Central</strong> supporting <strong>10 million devices per application</strong> and <strong>1,000 QPS per region</strong>.</li>
-              <li>Served as lead architect for information modeling in Azure Digital Twins' next iteration, advising senior managers on scalable solutions for enterprise IoT at global scale.</li>
-              <li>Evaluated graph databases (JanusGraph, Neo4J, Liquid, Faster) for performance and COGS; led a team of 5 to build an end-to-end UX-driven query experience with optimized <strong>AST generators</strong>.</li>
-              <li>Contributed to <strong>Microsoft Sets</strong> (Microsoft Research) — redesigned storage and query systems using LMDB for triple stores, enabling scalability beyond memory limits with high availability and replication.</li>
-              <li>Extended <strong>Bot Framework</strong> runtime with natural language understanding model integration, empowering developers to build AI-driven conversational agents.</li>
-            </ul>
           </div>
         </div>
 
-        <!-- Qualcomm -->
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="marker-ring"></div>
-            <div class="marker-dot"></div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Senior Engineer</h3>
-                <div class="timeline-company">
-                  <span class="company-badge qualcomm">Qualcomm</span>
-                  <span class="timeline-loc">Hyderabad, India</span>
-                </div>
-              </div>
-              <div class="timeline-period">
-                Apr 2008 — Sep 2012
-                <span class="duration">4 yrs</span>
-              </div>
+        <div class="tl-item reveal">
+          <div class="tl-left"><span class="tl-date">2008 – 2012</span></div>
+          <div class="tl-connector"><div class="tl-dot"></div><div class="tl-vline"></div></div>
+          <div class="tl-card">
+            <div class="tl-role">Senior Engineer</div>
+            <div class="tl-org"><span class="org-badge qc">Qualcomm</span> Hyderabad, India</div>
+            <div class="tl-chips">
+              <span>Linux Drivers</span><span>RTOS</span><span>DSP</span><span>Embedded Systems</span>
             </div>
-            <div class="timeline-tags">
-              <span class="tag">Linux Drivers</span>
-              <span class="tag">RTOS</span>
-              <span class="tag">DSP</span>
-              <span class="tag">Embedded Systems</span>
-              <span class="tag">Virtual Memory</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Engineered a <strong>shared memory driver and SDK</strong> for multiprocessor communication in Linux — high-speed duplex ports for voice/data calls between modem and application processors in mobile devices.</li>
-              <li>Advanced <strong>QRX</strong>, a real-time OS for Qualcomm DSP5 chips — optimized paging algorithms and virtual memory management for efficient audio/video processing on handheld devices with low-latency guarantees.</li>
-            </ul>
           </div>
         </div>
 
-        <!-- Rebaca -->
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="marker-ring"></div>
-            <div class="marker-dot"></div>
+        <div class="tl-item reveal">
+          <div class="tl-left"><span class="tl-date">2006 – 2008</span></div>
+          <div class="tl-connector"><div class="tl-dot"></div><div class="tl-vline"></div></div>
+          <div class="tl-card">
+            <div class="tl-role">Software Engineer</div>
+            <div class="tl-org"><span class="org-badge rb">Rebaca Technologies</span> Kolkata, India</div>
+            <div class="tl-chips">
+              <span>Embedded Linux</span><span>RTP</span><span>Video Streaming</span>
+            </div>
           </div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Software Engineer</h3>
-                <div class="timeline-company">
-                  <span class="company-badge rebaca">Rebaca Technologies</span>
-                  <span class="timeline-loc">Kolkata, India</span>
-                </div>
-              </div>
-              <div class="timeline-period">
-                May 2006 — Mar 2008
-                <span class="duration">2 yrs</span>
-              </div>
-            </div>
-            <div class="timeline-tags">
-              <span class="tag">Embedded Linux</span>
-              <span class="tag">Video Streaming</span>
-              <span class="tag">RTP</span>
-              <span class="tag">Transcoding</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Developed a <strong>transcoder for video surveillance systems</strong> on embedded Linux hardware — on-the-fly compression of RTP streams for low-bandwidth internet transmission, enabling reliable live and recorded streaming in constrained environments.</li>
-            </ul>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-left"><span class="tl-date">2005</span></div>
+          <div class="tl-connector"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <div class="tl-role">B.Tech, Computer Science &amp; Engineering</div>
+            <div class="tl-org">West Bengal University of Technology, India</div>
           </div>
         </div>
 
@@ -243,121 +162,177 @@
     </div>
   </section>
 
-  <!-- ═══ PROJECTS ═══ -->
+  <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
-      <div class="section-label">Projects</div>
-      <h2>Open Source &amp; <span class="gradient-text">Side Projects</span></h2>
-      <div class="projects-grid">
+      <div class="section-kicker">Open Source &amp; Side Projects</div>
+      <h2>Things I've built</h2>
 
-        <div class="project-card featured">
-          <div class="project-glow"></div>
-          <div class="project-header">
-            <div class="project-icon">⬡</div>
-            <div class="project-links">
-              <a href="https://github.com/angshuman/hexadb" target="_blank" rel="noopener" aria-label="GitHub">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-              </a>
+      <div class="proj-grid">
+
+        <!-- Cortex — has real screenshot -->
+        <div class="proj-card reveal">
+          <div class="proj-visual">
+            <img
+              src="https://raw.githubusercontent.com/angshuman/cortex/main/screenshots/chat-hero.png"
+              alt="Cortex AI chat interface"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('fallback-mode')">
+            <div class="proj-fallback">
+              <pre><code>$ cortex
+  AI chat · notes · tasks · files
+  Local-first · no cloud required
+  Windows · macOS · Linux</code></pre>
             </div>
           </div>
-          <h3>HexaDB</h3>
-          <p>A schemaless graph database built on RocksDB. Features efficient storage and querying for graph data with a clean C# API. Open-sourced on GitHub — <strong>46 ⭐</strong></p>
-          <div class="project-footer">
-            <div class="project-tags">
-              <span>C#</span><span>RocksDB</span><span>Graph DB</span>
+          <div class="proj-body">
+            <div class="proj-title-row">
+              <h3>Cortex</h3>
+              <a href="https://github.com/angshuman/cortex" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
             </div>
-            <span class="project-badge">Open Source</span>
+            <p>Local-first personal AI OS. Agentic chat, notes, task management, and file handling in a cross-platform desktop app. Runs entirely on your machine with no cloud lock-in.</p>
+            <div class="proj-tags"><span>TypeScript</span><span>Node.js</span><span>Electron</span><span>AI Agents</span><span>MCP</span></div>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">📰</div>
-            <div class="project-links">
-              <a href="https://sum.news" target="_blank" rel="noopener" aria-label="Visit sum.news">↗</a>
+        <!-- YATT — animated SVG -->
+        <div class="proj-card reveal">
+          <div class="proj-visual img-contain">
+            <img
+              src="https://raw.githubusercontent.com/angshuman/yatt/main/examples/animated-showcase.svg"
+              alt="YATT task tracker timeline view"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('fallback-mode')">
+            <div class="proj-fallback">
+              <pre><code>[~] Design phase  | 4d | @carol | %80
+[ ] API scaffold  | id:api | 3d | @bob
+[ ] Auth service  | after:api | %45
+>> v2.0 Release   | after:qa | +deadline</code></pre>
             </div>
           </div>
-          <h3>Sum.News</h3>
-          <p>AI-powered news contextualization platform leveraging topic identification and summarization to deliver concise, context-aware insights from diverse sources.</p>
-          <div class="project-footer">
-            <div class="project-tags">
-              <span>AI</span><span>NLP</span><span>Summarization</span>
+          <div class="proj-body">
+            <div class="proj-title-row">
+              <h3>YATT</h3>
+              <div class="proj-link-group">
+                <a href="https://github.com/angshuman/yatt" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+                <a href="https://angshuman.github.io/yatt" target="_blank" rel="noopener" class="proj-link">Demo ↗</a>
+              </div>
             </div>
-            <span class="project-badge live">Live</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">✍️</div>
-            <div class="project-links">
-              <a href="https://coreconcept.ai" target="_blank" rel="noopener" aria-label="Visit coreconcept.ai">↗</a>
-            </div>
-          </div>
-          <h3>CoreConcept.AI</h3>
-          <p>AI-assisted writing tool guided by a core knowledge base. Integrates topic extraction, summarization, and content validation to streamline professional document creation.</p>
-          <div class="project-footer">
-            <div class="project-tags">
-              <span>LLM</span><span>Knowledge Base</span><span>Content AI</span>
-            </div>
-            <span class="project-badge live">Live</span>
+            <p>Markdown-native task tracker — the .md file is the database, git is the history. Renders as a minimal Gantt timeline, Kanban board, or people view.</p>
+            <div class="proj-tags"><span>TypeScript</span><span>Gantt</span><span>Markdown</span><span>Git-native</span></div>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">🔍</div>
-            <div class="project-links">
-              <a href="https://github.com/angshuman/adt-match" target="_blank" rel="noopener" aria-label="GitHub">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-              </a>
+        <!-- HexaDB — diagram SVG -->
+        <div class="proj-card reveal">
+          <div class="proj-visual img-contain">
+            <img
+              src="https://raw.githubusercontent.com/angshuman/hexadb/master/hexadb-readme.svg"
+              alt="HexaDB graph relationship diagram"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('fallback-mode')">
+            <div class="proj-fallback">
+              <pre><code>POST /api/store/app/query
+{
+  "outgoing": [{
+    "path": "sensors#marker",
+    "target": { "filter": {
+      "green": { "op":"gt","value":9 }
+    }}
+  }]
+}</code></pre>
             </div>
           </div>
-          <h3>adt-match</h3>
-          <p>Query demonstration tool for Azure Digital Twins — showcases pattern matching capabilities and query expressions for the ADT platform.</p>
-          <div class="project-footer">
-            <div class="project-tags">
-              <span>Azure</span><span>Digital Twins</span><span>Query</span>
+          <div class="proj-body">
+            <div class="proj-title-row">
+              <h3>HexaDB</h3>
+              <a href="https://github.com/angshuman/hexadb" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
             </div>
-            <span class="project-badge">Open Source</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">🌲</div>
-            <div class="project-links">
-              <a href="https://github.com/angshuman/k2tree" target="_blank" rel="noopener" aria-label="GitHub">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3>k2tree</h3>
-          <p>Compact K²-tree spatial indexing data structure in C# — enables efficient representation and querying of sparse matrices and spatial data.</p>
-          <div class="project-footer">
-            <div class="project-tags">
-              <span>C#</span><span>Spatial Index</span><span>Data Structures</span>
-            </div>
-            <span class="project-badge">Open Source</span>
+            <p>Schemaless graph database on RocksDB. Stores JSON as RDF triples across six indices (S, P, O, SP, PO, OS), enabling relationship traversal queries at arbitrary depth with no schema. 46 ⭐</p>
+            <div class="proj-tags"><span>C#</span><span>RocksDB</span><span>Graph DB</span><span>Triple Store</span></div>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">📡</div>
-            <div class="project-links">
-              <a href="https://github.com/angshuman/ehreader" target="_blank" rel="noopener" aria-label="GitHub">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </div>
+        <!-- ChronoWeave — code visual -->
+        <div class="proj-card reveal">
+          <div class="proj-visual code-only">
+            <pre><code><span class="c-comment">// AI-powered timeline research</span>
+<span class="c-key">query:</span> <span class="c-str">"evolution of the internet"</span>
+
+→ Researches from multiple sources
+→ Merges into proportional time view
+→ Perplexity-inspired minimal UI
+
+<span class="c-dim">live at chronoweave-six.vercel.app</span></code></pre>
           </div>
-          <h3>ehreader</h3>
-          <p>Azure Event Hubs processing library in TypeScript — streamlines reading and processing of Event Hubs streams for cloud data pipelines.</p>
-          <div class="project-footer">
-            <div class="project-tags">
-              <span>TypeScript</span><span>Azure</span><span>Event Hubs</span>
+          <div class="proj-body">
+            <div class="proj-title-row">
+              <h3>ChronoWeave</h3>
+              <div class="proj-link-group">
+                <a href="https://github.com/angshuman/chronoweave" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+                <a href="https://chronoweave-six.vercel.app" target="_blank" rel="noopener" class="proj-link">Live ↗</a>
+              </div>
             </div>
-            <span class="project-badge">Open Source</span>
+            <p>AI-powered timeline research tool. Ask a question, get a richly structured historical timeline with intelligent multi-source merging and a proportional time axis.</p>
+            <div class="proj-tags"><span>JavaScript</span><span>AI</span><span>Vercel</span><span>Research UI</span></div>
+          </div>
+        </div>
+
+        <!-- adt-match — code visual -->
+        <div class="proj-card reveal">
+          <div class="proj-visual code-only">
+            <pre><code><span class="c-comment">// Azure Digital Twins query</span>
+<span class="c-key">SELECT</span> * <span class="c-key">FROM</span> DIGITALTWINS T
+<span class="c-key">WHERE</span> IS_OF_MODEL(T, <span class="c-str">'dtmi:Building;1'</span>)
+  <span class="c-key">AND</span> T.temperature &gt; 22
+  <span class="c-key">AND</span> T.$dtId <span class="c-key">IN</span> (
+    <span class="c-key">SELECT</span> target.$dtId
+    <span class="c-key">FROM</span> RELATIONSHIPS
+  )</code></pre>
+          </div>
+          <div class="proj-body">
+            <div class="proj-title-row">
+              <h3>adt-match</h3>
+              <a href="https://github.com/angshuman/adt-match" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+            </div>
+            <p>Query pattern-matching tool for Azure Digital Twins — built during my work on ADT's graph query engine to demonstrate and test the query system.</p>
+            <div class="proj-tags"><span>Azure</span><span>Digital Twins</span><span>Graph Query</span></div>
+          </div>
+        </div>
+
+        <!-- k2tree + ehreader — combined small -->
+        <div class="proj-card reveal">
+          <div class="proj-visual code-only">
+            <pre><code><span class="c-comment">// k2tree — compact spatial index</span>
+<span class="c-dim">K²-tree for sparse matrices
+O(k²) space, fast neighbour queries</span>
+
+<span class="c-comment">// ehreader — Event Hubs stream</span>
+<span class="c-dim">TypeScript processor for Azure
+Event Hubs cloud data pipelines</span></code></pre>
+          </div>
+          <div class="proj-body">
+            <div class="proj-title-row">
+              <h3>k2tree &amp; ehreader</h3>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div>
+                <div class="proj-title-row" style="margin-bottom:4px">
+                  <span style="font-size:0.85rem;font-weight:600;color:var(--text)">k2tree</span>
+                  <a href="https://github.com/angshuman/k2tree" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+                </div>
+                <p style="font-size:0.82rem">Compact K²-tree spatial index in C# for efficient sparse matrix and spatial data representation.</p>
+                <div class="proj-tags" style="margin-top:6px"><span>C#</span><span>Spatial Index</span></div>
+              </div>
+              <div style="border-top:1px solid var(--border);padding-top:12px">
+                <div class="proj-title-row" style="margin-bottom:4px">
+                  <span style="font-size:0.85rem;font-weight:600;color:var(--text)">ehreader</span>
+                  <a href="https://github.com/angshuman/ehreader" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+                </div>
+                <p style="font-size:0.82rem">Azure Event Hubs stream processor in TypeScript for cloud data pipelines.</p>
+                <div class="proj-tags" style="margin-top:6px"><span>TypeScript</span><span>Azure</span></div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -365,127 +340,51 @@
     </div>
   </section>
 
-  <!-- ═══ SKILLS ═══ -->
+  <!-- SKILLS -->
   <section id="skills">
     <div class="container">
-      <div class="section-label">Skills</div>
-      <h2>Technical <span class="gradient-text">Expertise</span></h2>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h4><span class="skill-icon">💻</span> Languages &amp; Frameworks</h4>
-          <div class="skill-tags">
-            <span>C#</span><span>C</span><span>Java</span><span>TypeScript</span>
-            <span>Spark</span><span>Gremlin</span><span>OpenCypher</span>
-          </div>
+      <div class="section-kicker">Technical Skills</div>
+      <h2>Breadth &amp; depth</h2>
+      <div class="skills-table">
+        <div class="skill-row reveal">
+          <div class="skill-label">Languages</div>
+          <div class="skill-items">C# &nbsp;·&nbsp; C &nbsp;·&nbsp; Java &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Spark &nbsp;·&nbsp; Gremlin &nbsp;·&nbsp; OpenCypher</div>
         </div>
-        <div class="skill-group">
-          <h4><span class="skill-icon">🗄️</span> Databases &amp; Storage</h4>
-          <div class="skill-tags">
-            <span>RocksDB</span><span>LMDB</span><span>JanusGraph</span>
-            <span>Neo4J</span><span>Graph Databases</span><span>Triple Stores</span>
-          </div>
+        <div class="skill-row reveal">
+          <div class="skill-label">Storage</div>
+          <div class="skill-items">RocksDB &nbsp;·&nbsp; LMDB &nbsp;·&nbsp; JanusGraph &nbsp;·&nbsp; Neo4J &nbsp;·&nbsp; Graph Databases &nbsp;·&nbsp; Triple Stores</div>
         </div>
-        <div class="skill-group">
-          <h4><span class="skill-icon">☁️</span> Cloud &amp; IoT</h4>
-          <div class="skill-tags">
-            <span>Azure Digital Twins</span><span>IoT Central</span>
-            <span>Bot Framework</span><span>Distributed Systems</span>
-            <span>Multi-Tenancy</span><span>Event Hubs</span>
-          </div>
+        <div class="skill-row reveal">
+          <div class="skill-label">Cloud &amp; IoT</div>
+          <div class="skill-items">Azure Digital Twins &nbsp;·&nbsp; IoT Central &nbsp;·&nbsp; Bot Framework &nbsp;·&nbsp; Event Hubs &nbsp;·&nbsp; Distributed Systems &nbsp;·&nbsp; Multi-Tenancy</div>
         </div>
-        <div class="skill-group">
-          <h4><span class="skill-icon">🤖</span> AI &amp; Machine Learning</h4>
-          <div class="skill-tags">
-            <span>NLU / NLP</span><span>LLM Integration</span>
-            <span>Topic Identification</span><span>Text Summarization</span>
-            <span>Knowledge Bases</span><span>Conversational AI</span>
-          </div>
+        <div class="skill-row reveal">
+          <div class="skill-label">AI / NLP</div>
+          <div class="skill-items">LLM Integration &nbsp;·&nbsp; NLU &nbsp;·&nbsp; Topic Extraction &nbsp;·&nbsp; Text Summarization &nbsp;·&nbsp; Conversational AI &nbsp;·&nbsp; MCP</div>
         </div>
-        <div class="skill-group">
-          <h4><span class="skill-icon">⚙️</span> Systems &amp; Architecture</h4>
-          <div class="skill-tags">
-            <span>Query Optimization</span><span>AST Generation</span>
-            <span>OS Internals</span><span>Device Drivers</span>
-            <span>RTOS</span><span>Performance Benchmarking</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4><span class="skill-icon">🚀</span> Leadership</h4>
-          <div class="skill-tags">
-            <span>System Architecture</span><span>Team Leadership</span>
-            <span>COGS Analysis</span><span>Cross-functional Collaboration</span>
-            <span>Mentoring</span>
-          </div>
+        <div class="skill-row reveal">
+          <div class="skill-label">Systems</div>
+          <div class="skill-items">Query Optimization &nbsp;·&nbsp; AST Generation &nbsp;·&nbsp; OS Internals &nbsp;·&nbsp; Device Drivers &nbsp;·&nbsp; RTOS &nbsp;·&nbsp; Performance Benchmarking</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ PATENTS & EDUCATION ═══ -->
-  <section id="patents">
-    <div class="container">
-      <div class="two-col">
-        <div>
-          <div class="section-label">Patents</div>
-          <h2>U.S. <span class="gradient-text">Patents</span></h2>
-          <div class="patent-cards">
-            <div class="patent-card">
-              <div class="patent-num">US10437810B2</div>
-              <h4>Disambiguation of Collection Access in a Graph Database</h4>
-              <p>Novel approach to resolving ambiguous collection references in graph database query processing.</p>
-            </div>
-            <div class="patent-card">
-              <div class="patent-num">US10565981B2</div>
-              <h4>Computer-Assisted Conversation Using Addressable Conversation Segments</h4>
-              <p>Conversational AI system enabling structured, addressable dialogue segments for richer human-computer interaction.</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="section-label">Education</div>
-          <h2>Academic <span class="gradient-text">Background</span></h2>
-          <div class="edu-card">
-            <div class="edu-icon">🎓</div>
-            <div class="edu-degree">B.Tech, Computer Science &amp; Engineering</div>
-            <div class="edu-school">West Bengal University of Technology, India</div>
-            <div class="edu-year">Graduated 2005</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ CONTACT ═══ -->
+  <!-- CONTACT -->
   <section id="contact">
     <div class="container">
-      <div class="contact-inner">
-        <div class="section-label">Contact</div>
-        <h2>Let's <span class="gradient-text">Connect</span></h2>
-        <p class="contact-sub">Available for advisory roles, technical consulting, and interesting engineering challenges at scale.</p>
-        <div class="contact-links">
-          <a href="mailto:sendtoansu@gmail.com" class="contact-card">
-            <div class="cc-icon">✉</div>
-            <div>
-              <div class="cc-label">Email</div>
-              <div class="cc-value">sendtoansu@gmail.com</div>
-            </div>
-          </a>
-          <a href="https://linkedin.com/in/angshumansarkar" target="_blank" rel="noopener" class="contact-card">
-            <div class="cc-icon">in</div>
-            <div>
-              <div class="cc-label">LinkedIn</div>
-              <div class="cc-value">angshumansarkar</div>
-            </div>
-          </a>
-          <a href="https://github.com/angshuman" target="_blank" rel="noopener" class="contact-card">
-            <div class="cc-icon gh-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-            </div>
-            <div>
-              <div class="cc-label">GitHub</div>
-              <div class="cc-value">@angshuman</div>
-            </div>
-          </a>
+      <div class="contact-inner reveal">
+        <div class="section-kicker">Contact</div>
+        <h2>Let's talk</h2>
+        <p class="contact-sub">Open to advisory roles, technical consulting, and interesting problems at scale.</p>
+        <div class="contact-row">
+          <a href="mailto:sendtoansu@gmail.com" class="contact-link">sendtoansu@gmail.com</a>
+          <span class="c-sep">·</span>
+          <a href="https://linkedin.com/in/angshumansarkar" target="_blank" rel="noopener" class="contact-link">LinkedIn ↗</a>
+          <span class="c-sep">·</span>
+          <a href="https://github.com/angshuman" target="_blank" rel="noopener" class="contact-link">GitHub ↗</a>
+          <span class="c-sep">·</span>
+          <span class="contact-plain">Seattle, WA</span>
         </div>
       </div>
     </div>
@@ -493,7 +392,7 @@
 
   <footer>
     <div class="container">
-      <p>© 2025 Angshuman Sarkar &nbsp;·&nbsp; Seattle, WA &nbsp;·&nbsp; Built with HTML, CSS &amp; ☕</p>
+      <p>© 2025 Angshuman Sarkar</p>
     </div>
   </footer>
 
