@@ -17,9 +17,9 @@
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">AS</a>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#experience">Timeline</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#patents">Patents</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -45,7 +45,7 @@
         <div class="stat"><span class="stat-n">2</span><span class="stat-l">U.S. patents</span></div>
       </div>
       <div class="hero-cta">
-        <a href="#work" class="btn-primary">Explore Work</a>
+        <a href="#projects" class="btn-primary">View Projects</a>
         <a href="https://github.com/angshuman" target="_blank" rel="noopener" class="btn-outline btn-icon">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
           GitHub
@@ -58,210 +58,6 @@
     </div>
   </section>
 
-  <!-- WORK — Business Impact -->
-  <section id="work">
-    <div class="container">
-      <div class="section-kicker">Experience &amp; Impact</div>
-      <h2>Where the work lives</h2>
-      <p class="section-sub">Two engineering tracks spanning 20 years: cloud infrastructure at planetary scale, and OS/device-level software in constrained hardware.</p>
-
-      <div class="impact-grid">
-
-        <!-- Cloud Track -->
-        <div class="impact-track reveal">
-          <div class="track-header">
-            <span class="track-badge cloud">Cloud &amp; Platform</span>
-            <div class="track-company">
-              <svg class="co-logo" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" aria-label="Microsoft" role="img"><rect x="0" y="0" width="10" height="10" fill="#f25022"/><rect x="11" y="0" width="10" height="10" fill="#7fba00"/><rect x="0" y="11" width="10" height="10" fill="#00a4ef"/><rect x="11" y="11" width="10" height="10" fill="#ffb900"/></svg>
-              Microsoft &nbsp;·&nbsp; Oct 2012 – Present
-            </div>
-          </div>
-          <p class="track-summary">Led foundational infrastructure across Azure Digital Twins, IoT Central, and Bot Framework — shipped to enterprise customers at global scale. Held the role of lead architect on two Azure v0 products, advising senior leadership and guiding cross-functional teams of 10+ engineers.</p>
-          <ul class="impact-list">
-            <li>Designed and shipped Azure Digital Twins' <strong>custom graph engine</strong>: RocksDB-backed store with OpenCypher→Gremlin translation — eliminated all external database dependencies, delivering a direct platform COGS reduction at cloud scale.</li>
-            <li>Architected IoT Central's <strong>multi-tenant device management layer</strong>: 10 million devices per application, 1,000 QPS per region — the foundation for Microsoft's enterprise IoT product expansion.</li>
-            <li>Led <strong>graph database evaluation</strong> across JanusGraph, Neo4J, Liquid, and Faster; delivered COGS analysis and architectural recommendations that shaped Azure Digital Twins' next-generation storage strategy, presented to senior leadership.</li>
-            <li>Shipped <strong>Bot Framework NLU integration</strong> in collaboration with ML specialists — part of Microsoft's production conversational AI developer platform used by thousands of developers.</li>
-            <li>Contributed to <strong>Microsoft Sets (MSR)</strong>: redesigned triple-store with LMDB for scalability beyond memory limits, with high availability and replication.</li>
-          </ul>
-        </div>
-
-        <!-- Embedded Track -->
-        <div class="impact-track reveal">
-          <div class="track-header">
-            <span class="track-badge embedded">Embedded &amp; Device</span>
-            <div class="track-company">
-              <svg class="co-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Qualcomm" role="img"><circle cx="12" cy="12" r="12" fill="#3253DC"/><path d="M12 7a5 5 0 100 10A5 5 0 0012 7zm0 1.6a3.4 3.4 0 110 6.8 3.4 3.4 0 010-6.8z" fill="white"/><path d="M14.2 14.2L17 17" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg>
-              Qualcomm &nbsp;·&nbsp; 2008–2012 &nbsp;&nbsp;Rebaca &nbsp;·&nbsp; 2006–2008
-            </div>
-          </div>
-          <p class="track-summary">Built OS-level and driver-level software deployed across millions of mobile and embedded devices — from DSP firmware on Qualcomm chipsets to real-time video transcoders on surveillance hardware.</p>
-          <ul class="impact-list">
-            <li>Designed <strong>shared-memory IPC driver and SDK</strong> for Qualcomm mobile chipsets: high-throughput modem↔application-processor communication for voice and data services, deployed across Qualcomm's mobile device lineup.</li>
-            <li>Advanced <strong>QRX RTOS</strong> for Qualcomm DSP5: optimized paging algorithms and virtual memory management for audio/video workloads under tight memory and power constraints on shipping handheld hardware.</li>
-            <li>Shipped <strong>RTP video transcoder</strong> on embedded Linux for surveillance systems: on-the-fly stream compression enabling reliable live and recorded video over bandwidth-constrained networks.</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- PRODUCT CONTRIBUTION CARDS -->
-      <div class="products-section">
-        <div class="products-kicker">
-          <svg class="co-logo" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="0" y="0" width="10" height="10" fill="#f25022"/><rect x="11" y="0" width="10" height="10" fill="#7fba00"/><rect x="0" y="11" width="10" height="10" fill="#00a4ef"/><rect x="11" y="11" width="10" height="10" fill="#ffb900"/></svg>
-          Microsoft Product Contributions
-        </div>
-        <div class="products-grid">
-
-          <!-- Azure Digital Twins -->
-          <div class="prod-card reveal">
-            <div class="prod-icon-wrap" style="--prod-color:#0078D4;--prod-bg:#e6f2fb">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5.5" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/><circle cx="18.5" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/><line x1="8.5" y1="12" x2="15.5" y2="12" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="5.5" r="2.2" stroke="currentColor" stroke-width="1.4" opacity="0.7"/><line x1="10.5" y1="7" x2="7.5" y2="9.3" stroke="currentColor" stroke-width="1.2" opacity="0.7"/><line x1="13.5" y1="7" x2="16.5" y2="9.3" stroke="currentColor" stroke-width="1.2" opacity="0.7"/></svg>
-            </div>
-            <div class="prod-body">
-              <div class="prod-title-row">
-                <h4>Azure Digital Twins</h4>
-                <span class="prod-role">Lead Architect</span>
-              </div>
-              <p>Designed the query processing system from scratch — OpenCypher to Gremlin translation, custom RocksDB-backed graph store, and an end-to-end UX-driven query experience with optimized AST generators. Eliminated external database dependencies, cutting COGS for the platform.</p>
-              <div class="prod-chips">
-                <span>Graph Engine</span><span>RocksDB</span><span>OpenCypher</span><span>COGS Reduction</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Azure IoT Central -->
-          <div class="prod-card reveal">
-            <div class="prod-icon-wrap" style="--prod-color:#00BCF2;--prod-bg:#e0f7fd">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="2.8" stroke="currentColor" stroke-width="1.7"/><circle cx="4" cy="7" r="1.8" stroke="currentColor" stroke-width="1.4"/><circle cx="20" cy="7" r="1.8" stroke="currentColor" stroke-width="1.4"/><circle cx="4" cy="17" r="1.8" stroke="currentColor" stroke-width="1.4"/><circle cx="20" cy="17" r="1.8" stroke="currentColor" stroke-width="1.4"/><line x1="5.7" y1="8.1" x2="9.8" y2="10.5" stroke="currentColor" stroke-width="1.2"/><line x1="18.3" y1="8.1" x2="14.2" y2="10.5" stroke="currentColor" stroke-width="1.2"/><line x1="5.7" y1="15.9" x2="9.8" y2="13.5" stroke="currentColor" stroke-width="1.2"/><line x1="18.3" y1="15.9" x2="14.2" y2="13.5" stroke="currentColor" stroke-width="1.2"/></svg>
-            </div>
-            <div class="prod-body">
-              <div class="prod-title-row">
-                <h4>Azure IoT Central</h4>
-                <span class="prod-role">Lead Architect</span>
-              </div>
-              <p>Architected the multi-tenant device management layer in partnership with operations and provisioning teams. Delivered a scalable store supporting <strong>10 million devices per application</strong> at <strong>1,000 QPS per region</strong> — the technical foundation for Microsoft's enterprise IoT expansion.</p>
-              <div class="prod-chips">
-                <span>Multi-Tenancy</span><span>10M Devices</span><span>1K QPS/Region</span><span>Distributed Systems</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bot Framework -->
-          <div class="prod-card reveal">
-            <div class="prod-icon-wrap" style="--prod-color:#7B2FB5;--prod-bg:#f0e7f9">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6a2 2 0 012-2h10a2 2 0 012 2v6a2 2 0 01-2 2H9l-3.5 3.5V14H5a2 2 0 01-2-2V6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="8" cy="9" r="1.1" fill="currentColor"/><circle cx="12" cy="9" r="1.1" fill="currentColor"/><path d="M17 9h1a2 2 0 012 2v5a2 2 0 01-2 2h-1.5L14 20.5V18h-1a2 2 0 01-2-2v-1" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" opacity="0.6"/></svg>
-            </div>
-            <div class="prod-body">
-              <div class="prod-title-row">
-                <h4>Bot Framework</h4>
-                <span class="prod-role">Core Engineer</span>
-              </div>
-              <p>Integrated natural language understanding models into the Bot Framework runtime in collaboration with ML specialists — extending the SDK with extensible NLU hooks that became part of Microsoft's production conversational AI developer platform, used by thousands of developers to build AI-driven bots.</p>
-              <div class="prod-chips">
-                <span>NLU Integration</span><span>Conversational AI</span><span>SDK Design</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Microsoft Sets (MSR) -->
-          <div class="prod-card reveal">
-            <div class="prod-icon-wrap" style="--prod-color:#107C10;--prod-bg:#e6f3e6">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="8" width="14" height="11" rx="1.5" stroke="currentColor" stroke-width="1.7"/><path d="M6 8V5.5A1.5 1.5 0 017.5 4H20a1.5 1.5 0 011.5 1.5V15a1.5 1.5 0 01-1.5 1.5H16" stroke="currentColor" stroke-width="1.4" opacity="0.6"/><line x1="6" y1="12.5" x2="12" y2="12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="15.5" x2="10" y2="15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <div class="prod-body">
-              <div class="prod-title-row">
-                <h4>Microsoft Sets <span class="prod-msr">MSR</span></h4>
-                <span class="prod-role">Core Engineer</span>
-              </div>
-              <p>Contributed to this distributed graph store from Microsoft Research — redesigned the storage and query layer using LMDB for triple stores, enabling scalability beyond memory limits with emphasis on high availability, consistency, and replication.</p>
-              <div class="prod-chips">
-                <span>LMDB</span><span>Triple Store</span><span>HA &amp; Replication</span><span>Research</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <section id="experience">
-    <div class="container">
-      <div class="section-kicker">Career Timeline</div>
-      <h2>The journey</h2>
-
-      <div class="timeline">
-
-        <div class="tl-item reveal">
-          <div class="tl-left"><span class="tl-date">2012 – Present</span></div>
-          <div class="tl-connector"><div class="tl-dot"></div><div class="tl-vline"></div></div>
-          <div class="tl-card">
-            <div class="tl-role">Principal Software Engineer</div>
-            <div class="tl-org"><span class="org-badge ms">Microsoft</span> Redmond, WA</div>
-            <div class="tl-chips">
-              <span>Azure Digital Twins</span><span>IoT Central</span>
-              <span>Bot Framework</span><span>Graph Databases</span><span>RocksDB</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tl-item reveal">
-          <div class="tl-left"><span class="tl-date">2008 – 2012</span></div>
-          <div class="tl-connector"><div class="tl-dot"></div><div class="tl-vline"></div></div>
-          <div class="tl-card">
-            <div class="tl-role">Senior Engineer</div>
-            <div class="tl-org"><span class="org-badge qc">Qualcomm</span> Hyderabad, India</div>
-            <div class="tl-chips">
-              <span>Linux Drivers</span><span>RTOS</span><span>DSP</span><span>Embedded Systems</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tl-item reveal">
-          <div class="tl-left"><span class="tl-date">2006 – 2008</span></div>
-          <div class="tl-connector"><div class="tl-dot"></div><div class="tl-vline"></div></div>
-          <div class="tl-card">
-            <div class="tl-role">Software Engineer</div>
-            <div class="tl-org"><span class="org-badge rb">Rebaca Technologies</span> Kolkata, India</div>
-            <div class="tl-chips">
-              <span>Embedded Linux</span><span>RTP</span><span>Video Streaming</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tl-item reveal">
-          <div class="tl-left"><span class="tl-date">2005</span></div>
-          <div class="tl-connector"><div class="tl-dot"></div></div>
-          <div class="tl-card">
-            <div class="tl-role">B.Tech, Computer Science &amp; Engineering</div>
-            <div class="tl-org">West Bengal University of Technology, India</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PATENTS -->
-  <section id="patents">
-    <div class="container">
-      <div class="section-kicker">Intellectual Property</div>
-      <h2>U.S. Patents</h2>
-      <div class="patents-grid">
-        <div class="patent-card reveal">
-          <div class="patent-num-lg">US10437810B2</div>
-          <h3>Disambiguation of Collection Access in a Graph Database</h3>
-          <p>Novel method for resolving ambiguous collection references in graph database query processing — arising from work on Azure Digital Twins' query engine.</p>
-        </div>
-        <div class="patent-card reveal">
-          <div class="patent-num-lg">US10565981B2</div>
-          <h3>Computer-Assisted Conversation Using Addressable Conversation Segments</h3>
-          <p>Architecture for structured, addressable dialogue segments enabling richer human-computer interaction — arising from work on Microsoft's Bot Framework and conversational AI platform.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- PROJECTS -->
   <section id="projects">
@@ -437,6 +233,212 @@ Event Hubs cloud data pipelines</span></code></pre>
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK — Business Impact -->
+  <section id="work">
+    <div class="container">
+      <div class="section-kicker">Experience &amp; Impact</div>
+      <h2>Where the work lives</h2>
+      <p class="section-sub">Two engineering tracks spanning 20 years: cloud infrastructure at planetary scale, and OS/device-level software in constrained hardware.</p>
+
+      <div class="impact-grid">
+
+        <!-- Cloud Track -->
+        <div class="impact-track reveal">
+          <div class="track-header">
+            <span class="track-badge cloud">Cloud &amp; Platform</span>
+            <div class="track-company">
+              <svg class="co-logo" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" aria-label="Microsoft" role="img"><rect x="0" y="0" width="10" height="10" fill="#f25022"/><rect x="11" y="0" width="10" height="10" fill="#7fba00"/><rect x="0" y="11" width="10" height="10" fill="#00a4ef"/><rect x="11" y="11" width="10" height="10" fill="#ffb900"/></svg>
+              Microsoft &nbsp;·&nbsp; Oct 2012 – Present
+            </div>
+          </div>
+          <p class="track-summary">Led foundational infrastructure across Azure Digital Twins, IoT Central, and Bot Framework — shipped to enterprise customers at global scale. Held the role of lead architect on two Azure v0 products, advising senior leadership and guiding cross-functional teams of 10+ engineers.</p>
+          <ul class="impact-list">
+            <li>Designed and shipped Azure Digital Twins' <strong>custom graph engine</strong>: RocksDB-backed store with OpenCypher→Gremlin translation — eliminated all external database dependencies, delivering a direct platform COGS reduction at cloud scale.</li>
+            <li>Architected IoT Central's <strong>multi-tenant device management layer</strong>: 10 million devices per application, 1,000 QPS per region — the foundation for Microsoft's enterprise IoT product expansion.</li>
+            <li>Led <strong>graph database evaluation</strong> across JanusGraph, Neo4J, Liquid, and Faster; delivered COGS analysis and architectural recommendations that shaped Azure Digital Twins' next-generation storage strategy, presented to senior leadership.</li>
+            <li>Shipped <strong>Bot Framework NLU integration</strong> in collaboration with ML specialists — part of Microsoft's production conversational AI developer platform used by thousands of developers.</li>
+            <li>Contributed to <strong>Microsoft Sets (MSR)</strong>: redesigned triple-store with LMDB for scalability beyond memory limits, with high availability and replication.</li>
+          </ul>
+        </div>
+
+        <!-- Embedded Track -->
+        <div class="impact-track reveal">
+          <div class="track-header">
+            <span class="track-badge embedded">Embedded &amp; Device</span>
+            <div class="track-company">
+              <svg class="co-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Qualcomm" role="img"><circle cx="12" cy="12" r="12" fill="#3253DC"/><path d="M12 7a5 5 0 100 10A5 5 0 0012 7zm0 1.6a3.4 3.4 0 110 6.8 3.4 3.4 0 010-6.8z" fill="white"/><path d="M14.2 14.2L17 17" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg>
+              Qualcomm &nbsp;·&nbsp; 2008–2012 &nbsp;&nbsp;Rebaca &nbsp;·&nbsp; 2006–2008
+            </div>
+          </div>
+          <p class="track-summary">Built OS-level and driver-level software deployed across millions of mobile and embedded devices — from DSP firmware on Qualcomm chipsets to real-time video transcoders on surveillance hardware.</p>
+          <ul class="impact-list">
+            <li>Designed <strong>shared-memory IPC driver and SDK</strong> for Qualcomm mobile chipsets: high-throughput modem↔application-processor communication for voice and data services, deployed across Qualcomm's mobile device lineup.</li>
+            <li>Advanced <strong>QRX RTOS</strong> for Qualcomm DSP5: optimized paging algorithms and virtual memory management for audio/video workloads under tight memory and power constraints on shipping handheld hardware.</li>
+            <li>Shipped <strong>RTP video transcoder</strong> on embedded Linux for surveillance systems: on-the-fly stream compression enabling reliable live and recorded video over bandwidth-constrained networks.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- PRODUCT CONTRIBUTION CARDS -->
+      <div class="products-section">
+        <div class="products-kicker">
+          <svg class="co-logo" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="0" y="0" width="10" height="10" fill="#f25022"/><rect x="11" y="0" width="10" height="10" fill="#7fba00"/><rect x="0" y="11" width="10" height="10" fill="#00a4ef"/><rect x="11" y="11" width="10" height="10" fill="#ffb900"/></svg>
+          Microsoft Product Contributions
+        </div>
+        <div class="products-grid">
+
+          <!-- Azure Digital Twins -->
+          <div class="prod-card reveal">
+            <div class="prod-icon-wrap" style="--prod-color:#0078D4;--prod-bg:#e6f2fb">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5.5" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/><circle cx="18.5" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/><line x1="8.5" y1="12" x2="15.5" y2="12" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="5.5" r="2.2" stroke="currentColor" stroke-width="1.4" opacity="0.7"/><line x1="10.5" y1="7" x2="7.5" y2="9.3" stroke="currentColor" stroke-width="1.2" opacity="0.7"/><line x1="13.5" y1="7" x2="16.5" y2="9.3" stroke="currentColor" stroke-width="1.2" opacity="0.7"/></svg>
+            </div>
+            <div class="prod-body">
+              <div class="prod-title-row">
+                <h4>Azure Digital Twins</h4>
+                <span class="prod-role">Lead Architect</span>
+              </div>
+              <p>Designed the query processing system from scratch — OpenCypher to Gremlin translation, custom RocksDB-backed graph store, and an end-to-end UX-driven query experience with optimized AST generators. Eliminated external database dependencies, cutting COGS for the platform.</p>
+              <div class="prod-chips">
+                <span>Graph Engine</span><span>RocksDB</span><span>OpenCypher</span><span>COGS Reduction</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Azure IoT Central -->
+          <div class="prod-card reveal">
+            <div class="prod-icon-wrap" style="--prod-color:#00BCF2;--prod-bg:#e0f7fd">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="2.8" stroke="currentColor" stroke-width="1.7"/><circle cx="4" cy="7" r="1.8" stroke="currentColor" stroke-width="1.4"/><circle cx="20" cy="7" r="1.8" stroke="currentColor" stroke-width="1.4"/><circle cx="4" cy="17" r="1.8" stroke="currentColor" stroke-width="1.4"/><circle cx="20" cy="17" r="1.8" stroke="currentColor" stroke-width="1.4"/><line x1="5.7" y1="8.1" x2="9.8" y2="10.5" stroke="currentColor" stroke-width="1.2"/><line x1="18.3" y1="8.1" x2="14.2" y2="10.5" stroke="currentColor" stroke-width="1.2"/><line x1="5.7" y1="15.9" x2="9.8" y2="13.5" stroke="currentColor" stroke-width="1.2"/><line x1="18.3" y1="15.9" x2="14.2" y2="13.5" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+            <div class="prod-body">
+              <div class="prod-title-row">
+                <h4>Azure IoT Central</h4>
+                <span class="prod-role">Lead Architect</span>
+              </div>
+              <p>Architected the multi-tenant device management layer in partnership with operations and provisioning teams. Delivered a scalable store supporting <strong>10 million devices per application</strong> at <strong>1,000 QPS per region</strong> — the technical foundation for Microsoft's enterprise IoT expansion.</p>
+              <div class="prod-chips">
+                <span>Multi-Tenancy</span><span>10M Devices</span><span>1K QPS/Region</span><span>Distributed Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bot Framework -->
+          <div class="prod-card reveal">
+            <div class="prod-icon-wrap" style="--prod-color:#7B2FB5;--prod-bg:#f0e7f9">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6a2 2 0 012-2h10a2 2 0 012 2v6a2 2 0 01-2 2H9l-3.5 3.5V14H5a2 2 0 01-2-2V6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="8" cy="9" r="1.1" fill="currentColor"/><circle cx="12" cy="9" r="1.1" fill="currentColor"/><path d="M17 9h1a2 2 0 012 2v5a2 2 0 01-2 2h-1.5L14 20.5V18h-1a2 2 0 01-2-2v-1" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" opacity="0.6"/></svg>
+            </div>
+            <div class="prod-body">
+              <div class="prod-title-row">
+                <h4>Bot Framework</h4>
+                <span class="prod-role">Core Engineer</span>
+              </div>
+              <p>Integrated natural language understanding models into the Bot Framework runtime in collaboration with ML specialists — extending the SDK with extensible NLU hooks that became part of Microsoft's production conversational AI developer platform, used by thousands of developers to build AI-driven bots.</p>
+              <div class="prod-chips">
+                <span>NLU Integration</span><span>Conversational AI</span><span>SDK Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Microsoft Sets (MSR) -->
+          <div class="prod-card reveal">
+            <div class="prod-icon-wrap" style="--prod-color:#107C10;--prod-bg:#e6f3e6">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="8" width="14" height="11" rx="1.5" stroke="currentColor" stroke-width="1.7"/><path d="M6 8V5.5A1.5 1.5 0 017.5 4H20a1.5 1.5 0 011.5 1.5V15a1.5 1.5 0 01-1.5 1.5H16" stroke="currentColor" stroke-width="1.4" opacity="0.6"/><line x1="6" y1="12.5" x2="12" y2="12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="15.5" x2="10" y2="15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="prod-body">
+              <div class="prod-title-row">
+                <h4>Microsoft Sets <span class="prod-msr">MSR</span></h4>
+                <span class="prod-role">Core Engineer</span>
+              </div>
+              <p>Contributed to this distributed graph store from Microsoft Research — redesigned the storage and query layer using LMDB for triple stores, enabling scalability beyond memory limits with emphasis on high availability, consistency, and replication.</p>
+              <div class="prod-chips">
+                <span>LMDB</span><span>Triple Store</span><span>HA &amp; Replication</span><span>Research</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <div class="section-kicker">Career Timeline</div>
+      <h2>The journey</h2>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-left"><span class="tl-date">2012 – Present</span></div>
+          <div class="tl-connector"><div class="tl-dot"></div><div class="tl-vline"></div></div>
+          <div class="tl-card">
+            <div class="tl-role">Principal Software Engineer</div>
+            <div class="tl-org"><span class="org-badge ms">Microsoft</span> Redmond, WA</div>
+            <div class="tl-chips">
+              <span>Azure Digital Twins</span><span>IoT Central</span>
+              <span>Bot Framework</span><span>Graph Databases</span><span>RocksDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-left"><span class="tl-date">2008 – 2012</span></div>
+          <div class="tl-connector"><div class="tl-dot"></div><div class="tl-vline"></div></div>
+          <div class="tl-card">
+            <div class="tl-role">Senior Engineer</div>
+            <div class="tl-org"><span class="org-badge qc">Qualcomm</span> Hyderabad, India</div>
+            <div class="tl-chips">
+              <span>Linux Drivers</span><span>RTOS</span><span>DSP</span><span>Embedded Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-left"><span class="tl-date">2006 – 2008</span></div>
+          <div class="tl-connector"><div class="tl-dot"></div><div class="tl-vline"></div></div>
+          <div class="tl-card">
+            <div class="tl-role">Software Engineer</div>
+            <div class="tl-org"><span class="org-badge rb">Rebaca Technologies</span> Kolkata, India</div>
+            <div class="tl-chips">
+              <span>Embedded Linux</span><span>RTP</span><span>Video Streaming</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-left"><span class="tl-date">2005</span></div>
+          <div class="tl-connector"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <div class="tl-role">B.Tech, Computer Science &amp; Engineering</div>
+            <div class="tl-org">West Bengal University of Technology, India</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PATENTS -->
+  <section id="patents">
+    <div class="container">
+      <div class="section-kicker">Intellectual Property</div>
+      <h2>U.S. Patents</h2>
+      <div class="patents-grid">
+        <div class="patent-card reveal">
+          <div class="patent-num-lg">US10437810B2</div>
+          <h3>Disambiguation of Collection Access in a Graph Database</h3>
+          <p>Novel method for resolving ambiguous collection references in graph database query processing — arising from work on Azure Digital Twins' query engine.</p>
+        </div>
+        <div class="patent-card reveal">
+          <div class="patent-num-lg">US10565981B2</div>
+          <h3>Computer-Assisted Conversation Using Addressable Conversation Segments</h3>
+          <p>Architecture for structured, addressable dialogue segments enabling richer human-computer interaction — arising from work on Microsoft's Bot Framework and conversational AI platform.</p>
+        </div>
       </div>
     </div>
   </section>
