@@ -527,6 +527,78 @@ section    { padding: 96px 0; }
 }
 
 /* ════════════════════════════
+   ABOUT
+════════════════════════════ */
+#about {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 56px;
+  align-items: start;
+}
+.about-narrative h2 { margin-bottom: 20px; }
+.about-narrative p  {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+.about-narrative p:last-child { margin-bottom: 0; }
+.about-narrative em { color: var(--text); font-style: italic; }
+
+.looking-for-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.lf-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.looking-for-card p {
+  font-size: 0.855rem;
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+.looking-for-card p:last-of-type { margin-bottom: 16px; }
+.lf-cta {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: color 0.2s;
+}
+.lf-cta:hover { color: var(--accent-hover); }
+
+.about-facts {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.fact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.8rem;
+}
+.fact-row:last-child { border-bottom: none; }
+.fact-k { color: var(--subtle); font-weight: 500; }
+.fact-v { color: var(--text); font-weight: 500; text-align: right; }
+
+/* ════════════════════════════
    PROJECTS
 ════════════════════════════ */
 #projects {
@@ -736,6 +808,7 @@ footer p { font-size: 0.76rem; color: var(--subtle); text-align: center; }
    RESPONSIVE
 ════════════════════════════ */
 @media (max-width: 920px) {
+  .about-grid    { grid-template-columns: 1fr; gap: 32px; }
   .impact-grid   { grid-template-columns: 1fr; }
   .patents-grid  { grid-template-columns: 1fr; }
   .products-grid { grid-template-columns: 1fr; }

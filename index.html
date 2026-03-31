@@ -17,6 +17,7 @@
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">AS</a>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#experience">Timeline</a></li>
@@ -36,8 +37,8 @@
       <div class="hero-eyebrow">Seattle, WA &nbsp;·&nbsp; Principal Engineer &nbsp;·&nbsp; 2 U.S. Patents</div>
       <h1>Angshuman<br>Sarkar</h1>
       <p class="preferred-name">Preferred name: <strong>Angshu</strong></p>
-      <p class="hero-role">Systems Architect &amp; Technical Thought Leader</p>
-      <p class="hero-sub">20+ years architecting distributed systems and cloud infrastructure — from bare-metal device drivers to Azure's global IoT platform. I establish the technical foundations that scale and lead the engineering decisions that matter at every layer of the stack.</p>
+      <p class="hero-role">Principal Software Engineer · Systems Architect</p>
+      <p class="hero-sub">I designed the query engine for Azure Digital Twins, architected the device management platform behind Azure IoT Central, and wrote IPC drivers running in Qualcomm mobile chipsets — across 20 years and every layer of the stack, from RTOS internals to global cloud infrastructure. I'm the person who figures out the architecture before anyone else knows there's a problem.</p>
       <div class="hero-stats">
         <div class="stat"><span class="stat-n">20+</span><span class="stat-l">years</span></div>
         <div class="stat"><span class="stat-n">13+</span><span class="stat-l">at Microsoft</span></div>
@@ -59,11 +60,41 @@
   </section>
 
 
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-narrative">
+          <div class="section-kicker">About</div>
+          <h2>The full stack, really.</h2>
+          <p>I started at the bottom — writing shared-memory IPC drivers and optimizing paging algorithms for Qualcomm's DSP chips. I moved to the cloud when the interesting problems did. At Microsoft I've been the hands-on architect behind two v0 Azure products: <strong>Azure Digital Twins</strong> (designed the graph engine from scratch — RocksDB store, OpenCypher-to-Gremlin translator, AST pipeline) and <strong>Azure IoT Central</strong> (multi-tenant device platform, 10M devices per application, 1,000 QPS per region).</p>
+          <p>The through-line across 20 years is systems thinking: <em>what breaks at scale? Where is the abstraction boundary? What is the irreversible architectural decision?</em> I've made those calls on products used by thousands of enterprise customers globally, and I've been right enough times to hold two patents and lead teams of 10+ engineers.</p>
+          <p>On the side I build things to stay sharp and curious — a graph database, an AI OS, a markdown-native task tracker. These aren't resume padding; they're how I keep my intuitions calibrated.</p>
+        </div>
+        <div class="about-sidebar">
+          <div class="looking-for-card">
+            <div class="lf-label">What I'm looking for next</div>
+            <p>A technically hard problem at scale — infrastructure, AI platforms, or developer tooling — where deep systems knowledge changes what's possible. I want to be the person who shapes the architecture, not just implements it.</p>
+            <p>Open to Principal Engineer, Staff/Distinguished Engineer, and technical leadership roles where engineering judgment drives product direction.</p>
+            <a href="mailto:sendtoansu@gmail.com" class="lf-cta">Get in touch ↗</a>
+          </div>
+          <div class="about-facts">
+            <div class="fact-row"><span class="fact-k">Location</span><span class="fact-v">Seattle, WA</span></div>
+            <div class="fact-row"><span class="fact-k">Currently</span><span class="fact-v">Microsoft (13+ yrs)</span></div>
+            <div class="fact-row"><span class="fact-k">Patents</span><span class="fact-v">2 U.S. (graph DB · conv. AI)</span></div>
+            <div class="fact-row"><span class="fact-k">Education</span><span class="fact-v">B.Tech CS, WBUT India</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
-      <div class="section-kicker">Open Source &amp; Side Projects</div>
-      <h2>Things I've built</h2>
+      <div class="section-kicker">Independent Work</div>
+      <h2>What I build on my own time</h2>
+      <p class="section-sub" style="margin-bottom:40px">These projects reflect how I think — not what I do for work. HexaDB came from wanting to understand graph storage at the primitive level. Cortex came from wanting an AI tool that doesn't send my data to the cloud. YATT came from believing task trackers are too complicated. Each one is a bet on a design decision I wanted to prove out.</p>
 
       <div class="proj-grid">
 
@@ -242,7 +273,7 @@ Event Hubs cloud data pipelines</span></code></pre>
     <div class="container">
       <div class="section-kicker">Experience &amp; Impact</div>
       <h2>Where the work lives</h2>
-      <p class="section-sub">Two engineering tracks spanning 20 years: cloud infrastructure at planetary scale, and OS/device-level software in constrained hardware.</p>
+      <p class="section-sub">Two engineering tracks spanning 20 years. The cloud track: foundational infrastructure for Azure products used by thousands of enterprise customers globally. The device track: OS-level software running in millions of shipped chips and embedded systems.</p>
 
       <div class="impact-grid">
 
@@ -302,7 +333,7 @@ Event Hubs cloud data pipelines</span></code></pre>
                 <h4>Azure Digital Twins</h4>
                 <span class="prod-role">Lead Architect</span>
               </div>
-              <p>Designed the query processing system from scratch — OpenCypher to Gremlin translation, custom RocksDB-backed graph store, and an end-to-end UX-driven query experience with optimized AST generators. Eliminated external database dependencies, cutting COGS for the platform.</p>
+              <p>Designed the query processing system from scratch — OpenCypher-to-Gremlin translation, custom RocksDB-backed graph store, optimized AST pipeline. <strong>Eliminated all external database dependencies</strong>, delivering direct COGS reduction at cloud scale. Served as lead architect, setting the technical direction and presenting the storage strategy to senior leadership. Adopted by enterprise IoT customers globally.</p>
               <div class="prod-chips">
                 <span>Graph Engine</span><span>RocksDB</span><span>OpenCypher</span><span>COGS Reduction</span>
               </div>
@@ -319,7 +350,7 @@ Event Hubs cloud data pipelines</span></code></pre>
                 <h4>Azure IoT Central</h4>
                 <span class="prod-role">Lead Architect</span>
               </div>
-              <p>Architected the multi-tenant device management layer in partnership with operations and provisioning teams. Delivered a scalable store supporting <strong>10 million devices per application</strong> at <strong>1,000 QPS per region</strong> — the technical foundation for Microsoft's enterprise IoT expansion.</p>
+              <p>Designed the multi-tenant device management layer leading a team of 10+ engineers. <strong>10M devices per application, 1,000 QPS per region</strong> — a system that needed to work the first time; there's no "we'll scale it later" when enterprise contracts are on the line. This is the infrastructure that runs Microsoft's IoT Central globally.</p>
               <div class="prod-chips">
                 <span>Multi-Tenancy</span><span>10M Devices</span><span>1K QPS/Region</span><span>Distributed Systems</span>
               </div>
